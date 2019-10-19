@@ -15,15 +15,3 @@ class AESCipher:
     decipher = AES.new(self.key, AES.MODE_ECB)
     msg = decipher.decrypt(bytes.fromhex(cipherText))
     return msg
-
-if __name__ == "__main__":
-  c = AESCipher("abcdefghijklmnop")
-
-  secret = "SepertiYangBiasa"
-  print(secret)
-
-  cipherText = c.encrypt(secret)
-  print(cipherText)
-
-  secret = c.decrypt(cipherText)
-  print(secret)
