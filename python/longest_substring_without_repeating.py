@@ -1,4 +1,4 @@
-def lengthOfLongestSubstring(self, s):
+def lengthOfLongestSubstring(s):
     lookup_ = set()
     max_ = 0
     length = 0
