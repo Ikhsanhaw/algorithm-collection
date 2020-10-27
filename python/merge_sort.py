@@ -104,9 +104,3 @@ def merge_sort(array: List) -> List:
     right_half = array[middle:]
 
     return merge(merge_sort(left_half), merge_sort(right_half))
-
-
-if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()
